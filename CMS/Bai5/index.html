@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 400px;
+            border: 1px solid #000;
+            background-image: url(https://www.t-nation.com/wp-content/uploads/2005/03/Iron-Cross.jpg);
+            background-repeat: no-repeat;
+        }
+        .background-cover{
+            background-size: cover;
+        }
+        .background-contain{
+            background-size: contain;
+        }
+        .background-multi{
+            background-image: url('https://www.t-nation.com/wp-content/uploads/2005/03/Iron-Cross.jpg'), url(https://www.t-nation.com/wp-content/uploads/2005/03/Iron-Cross.jpg);
+            background-size: 300px 100px, cover;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="background-cover">
+
+    </div>
+    
+    <div class="background-contain">
+        
+    </div>
+
+    <div class="background-multi">
+        
+    </div>
+
+</body>
+</html>
