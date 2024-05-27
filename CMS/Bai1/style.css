@@ -1,5 +1,5 @@
 .container{
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 header nav{
@@ -123,3 +123,48 @@ footer p{
     color: white;
     text-align: center;
 }
+
+@media (min-width: 576px){
+    .content{
+        grid-template-columns: 1fr 230px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }    
+}
+
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }    
+    header{
+        grid-template-columns: 150px 1fr;
+        text-align: left;
+    }
+    header ul{
+        text-align: right;
+    }
+    .latest-news-post{
+        grid-template-columns: 250px 1fr;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 960px;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
