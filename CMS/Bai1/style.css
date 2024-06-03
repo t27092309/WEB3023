@@ -55,9 +55,6 @@ main h4 a{
     color: orange;
     text-decoration: none;
 }
-
-
-
 aside{
     clear: both;
     float: right;
@@ -78,6 +75,7 @@ aside .login{
 }
 form .form-group{
     padding-top: 10px;
+    min-width: none;
 }
 .form-group .btn{
     background-color: orange;
@@ -87,9 +85,13 @@ form .form-group{
 
 }
 .views{
+    width: 100%;
     box-shadow: 0 0 5px 0;
     text-align: left;
     padding-left: 10px;
+}
+.views .views-list{
+    width: 100%;
 }
 .views .views-list .views-items a{
     color: orange;
@@ -126,7 +128,10 @@ footer p{
 
 @media (min-width: 576px){
     .content{
-        grid-template-columns: 1fr 230px;
+        grid-template-columns: 230px;
+    }
+    aside .form-group{
+        width: 100%;
     }
 }
 
@@ -134,6 +139,9 @@ footer p{
     .container{
         max-width: 720px;
     }    
+    aside .form-group{
+        width: 100%;
+    }
 }
 
 @media (min-width: 992px){
@@ -141,14 +149,17 @@ footer p{
         max-width: 960px;
     }    
     header{
-        grid-template-columns: 150px 1fr;
+        grid-template-columns: 150px;
         text-align: left;
     }
     header ul{
         text-align: right;
     }
     .latest-news-post{
-        grid-template-columns: 250px 1fr;
+        grid-template-columns: 250px;
+    }
+    aside .form-group{
+        width: 100%;
     }
 }
 
