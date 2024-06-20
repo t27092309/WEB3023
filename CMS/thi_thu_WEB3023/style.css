@@ -1,6 +1,14 @@
+*{
+  box-sizing: border-box;
+  font-family: Duepuntozero;
+}
 .container {
   margin: 0 auto;
   max-width: 1200px;
+}
+@font-face {
+  font-family:Duepuntozero ;
+  src: url(./font/UTM\ Duepuntozero.ttf);
 }
 nav {
   background-color: pink;
@@ -63,9 +71,13 @@ article {
 .sp img {
   width: 100%;
 }
-.sp img:hover{
-    transition: 1s ease-in-out;
-    transform: scale(1.2);
+.sp img:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.2);
+}
+.sp img:out-of-range {
+  transition: 1s ease-in-out;
+  transform: scale(1);
 }
 .sp .price {
   color: red;
